@@ -7,7 +7,7 @@ def ai(txt):
         if 'generateContent' in m.supported_generation_methods:
             print(m.name)
     model = genai.GenerativeModel('gemini-pro')
-    response = model.generate_content("வணக்கம் மக்களே என்னிடம் அனைத்து விதமான கேள்விகளுக்கும் பதில் கிடைக்கும்.: "+txt)
+    response = model.generate_content("Hello ! I am a google assistant created by Naveen Kumar.You ask anything to me: "+txt)
     return response.text
 
 
