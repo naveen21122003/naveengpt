@@ -37,7 +37,7 @@ if message:
     elif message.lower() == "hello":
         with st.chat_message("bot"):
             st.write("Hello!")
-            st.session_state.messages.append({"role": "bot", "message": "Good morning! Have a nice day"})
+            st.session_state.messages.append({"role": "bot", "message": "Hello!"})
     else:
         with st.chat_message("bot"):
             data = ai(message)
